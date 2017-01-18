@@ -1,0 +1,28 @@
+/**
+ * 头部区域
+ */
+
+#header{
+    height: 200px;
+    background-color: #F0F0F0;
+}
+
+#header > .topbar{
+    height: 40px;
+    border-bottom: 1px solid #c0c0c0;
+    line-height: 40px;
+}
+
+
+
+section{
+    height: 200px;
+    background-color: #fff;
+}
+section:nth-child(2n){
+    background-color: #f5f5f5;
+}
+/**
+ * 脚注区域
+ */
+#footer{}
