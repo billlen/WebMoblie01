@@ -4,16 +4,50 @@
 
 #header{
     height: 200px;
-    background-color: #F0F0F0;
 }
 
-#header > .topbar{
+#header>.topbar{
     height: 40px;
     border-bottom: 1px solid #c0c0c0;
     line-height: 40px;
 }
+/*固定宽度且居中的版心*/
+#header> .topbar >.container >.row>div{
+    height: 40px;
+}
+
+#header> .topbar >.container >.row>div:nth-of-type(2n){
+    height: 40px;
+}
+
+body{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
 
+@font-face {
+    font-family: "weijinsuo";
+    src:url("../font/MiFie-Web-Font.eot") format('embedded-opentype'),
+    url("../font/MiFie-Web-Font.svg") format('svg'),
+    url("../font/MiFie-Web-Font.ttf") format('truetype'),
+    url("../font/MiFie-Web-Font.woff") format('woff');
+}
+
+[class^="icon-"],[class*=" icon-"]{
+    font-family:weijinsuo;
+    font-style: normal;
+}
+
+/*伪元素建议用两个冒号，一个冒号是伪类*/
+.icon-mobilephone::before {
+    content: "\e908";
+    font-size: 13px;
+}
+
+.icon-telephone::before {
+    content: "\e909";
+    font-size: 15px;
+}
 
 section{
     height: 200px;
@@ -22,7 +56,102 @@ section{
 section:nth-child(2n){
     background-color: #f5f5f5;
 }
+
+#header .mobile-link{
+    font-size:12px;
+    color: #888;
+}
+
+#header .mobile-link>img{
+    display: none;
+    position: absolute;
+    left:50%;
+    margin-left: -60px;
+    top:30px;
+}
+#header .mobile-link:hover >img{
+    display: block;
+}
+
+#header > .topbar >.container >.row>div{
+    height: 40px;
+    font-size:12px;
+    color: #888;
+}
+/*第二个开始*/
+#header > .topbar >.container >.row>div+div{
+    border-left: 1px solid gray;
+}
+
+
+
+
 /**
  * 脚注区域
  */
 #footer{}
+
+
+
+
+
+/*
+* 公共样式
+*/
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+.btn-default:focus,
+.btn-default.focus {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #8c8c8c;
+}
+.btn-default:hover {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+.btn-default:active:hover,
+.btn-default.active:hover,
+.open > .dropdown-toggle.btn-default:hover,
+.btn-default:active:focus,
+.btn-default.active:focus,
+.open > .dropdown-toggle.btn-default:focus,
+.btn-default:active.focus,
+.btn-default.active.focus,
+.open > .dropdown-toggle.btn-default.focus {
+    color: #333;
+    background-color: #d4d4d4;
+    border-color: #8c8c8c;
+}
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+    background-image: none;
+}
+.btn-default.disabled:hover,
+.btn-default[disabled]:hover,
+fieldset[disabled] .btn-default:hover,
+.btn-default.disabled:focus,
+.btn-default[disabled]:focus,
+fieldset[disabled] .btn-default:focus,
+.btn-default.disabled.focus,
+.btn-default[disabled].focus,
+fieldset[disabled] .btn-default.focus {
+    background-color: #fff;
+    border-color: #ccc;
+}
+.btn-default .badge {
+    color: #fff;
+    background-color: #333;
+}
