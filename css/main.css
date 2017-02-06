@@ -3,7 +3,6 @@
  */
 
 #header{
-    height: 200px;
 }
 
 #header>.topbar{
@@ -49,10 +48,25 @@ body{
     font-size: 15px;
 }
 
-section{
+/*通栏广告，轮播*/
+#main_ad{}
+
+#main_ad >.carousel-inner >.item{
+    height: 410px;
+    background-repeat:no-repeat;
+    background-position: center center;
+    /*background-size:cover用最小边撑满容器为准
+      background-size:contain最大边包含到容器内为准
+    */
+    background-size:cover;
+}
+
+
+
+/*section{
     height: 200px;
     background-color: #fff;
-}
+}*/
 section:nth-child(2n){
     background-color: #f5f5f5;
 }
@@ -161,6 +175,7 @@ fieldset[disabled] .btn-default.focus {
 .navbar-itcast {
     background-color: #fff;
     border-color: #f5f5f5;
+    margin-bottom: 0;
 }
 .navbar-itcast .navbar-brand {
     color: #777;
@@ -190,7 +205,6 @@ fieldset[disabled] .btn-default.focus {
 .navbar-itcast .navbar-nav > .active > a:focus {
     color: #555;
     background-color: #fff;
-
 }
 .navbar-itcast .navbar-nav > .disabled > a,
 .navbar-itcast .navbar-nav > .disabled > a:hover,
