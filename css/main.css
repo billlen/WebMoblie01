@@ -52,7 +52,7 @@ body{
 #main_ad{}
 
 #main_ad >.carousel-inner >.item{
-    height: 410px;
+
     background-repeat:no-repeat;
     background-position: center center;
     /*background-size:cover用最小边撑满容器为准
@@ -62,6 +62,12 @@ body{
 }
 
 
+/* 当屏幕宽度大于768时，将元素高度设置为410px */
+@media (min-width: 768px) {
+    #main_ad >.carousel-inner >.item{
+        height: 410px;
+    }
+}
 
 /*section{
     height: 200px;
