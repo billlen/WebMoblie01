@@ -1,5 +1,5 @@
 /**
- * 头部区域
+ * å¤´éƒ¨åŒºåŸŸ
  */
 
 #header{
@@ -10,7 +10,7 @@
     border-bottom: 1px solid #c0c0c0;
     line-height: 40px;
 }
-/*固定宽度且居中的版心*/
+/*å›ºå®šå®½åº¦ä¸”å±…ä¸­çš„ç‰ˆå¿ƒ*/
 #header> .topbar >.container >.row>div{
     height: 40px;
 }
@@ -37,7 +37,7 @@ body{
     font-style: normal;
 }
 
-/*伪元素建议用两个冒号，一个冒号是伪类*/
+/*ä¼ªå…ƒç´ å»ºè®®ç”¨ä¸¤ä¸ªå†’å·ï¼Œä¸€ä¸ªå†’å·æ˜¯ä¼ªç±»*/
 .icon-mobilephone::before {
     content: "\e908";
     font-size: 13px;
@@ -48,21 +48,21 @@ body{
     font-size: 15px;
 }
 
-/*通栏广告，轮播*/
+/*é€šæ å¹¿å‘Šï¼Œè½®æ’­*/
 #main_ad{}
 
 #main_ad >.carousel-inner >.item{
 
     background-repeat:no-repeat;
     background-position: center center;
-    /*background-size:cover用最小边撑满容器为准
-      background-size:contain最大边包含到容器内为准
+    /*background-size:coverç”¨æœ€å°è¾¹æ’‘æ»¡å®¹å™¨ä¸ºå‡†
+      background-size:containæœ€å¤§è¾¹åŒ…å«åˆ°å®¹å™¨å†…ä¸ºå‡†
     */
     background-size:cover;
 }
 
 
-/* 当屏幕宽度大于768时，将元素高度设置为410px */
+/* å½“å±å¹•å®½åº¦å¤§äºŽ768æ—¶ï¼Œå°†å…ƒç´ é«˜åº¦è®¾ç½®ä¸º410px */
 @media (min-width: 768px) {
     #main_ad >.carousel-inner >.item{
         height: 410px;
@@ -99,7 +99,7 @@ section:nth-child(2n){
     font-size:12px;
     color: #888;
 }
-/*第二个开始*/
+/*ç¬¬äºŒä¸ªå¼€å§‹*/
 #header > .topbar >.container >.row>div+div{
     border-left: 1px solid gray;
 }
@@ -108,7 +108,7 @@ section:nth-child(2n){
 
 
 /**
- * 脚注区域
+ * è„šæ³¨åŒºåŸŸ
  */
 #footer{}
 
@@ -117,7 +117,7 @@ section:nth-child(2n){
 
 
 /*
-* 公共样式
+* å…¬å…±æ ·å¼
 */
 .btn-default {
     color: #333;
@@ -304,3 +304,128 @@ fieldset[disabled] .navbar-itcast .btn-link:focus {
     vertical-align: middle;
 }
 
+#tese{
+    padding: 50px 0;
+    border-bottom:1px solid #c0c0c0;
+}
+
+/*#tese> .container > .row >div{
+    height: 50px;
+    background-color: #f40;
+}
+#tese> .container > .row >div:nth-of-type(2n){
+    background-color: #04f;
+}*/
+
+#tese> .container > .row >div{
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+
+.icon-uniE907:before {
+    content: "\e907";
+}
+#tese i{
+    font-size:34px;
+}
+.icon-uniE906:before {
+    content: "\e906";
+}
+#ljyy{
+    border-bottom:1px solid #c0c0c0;
+    padding: 10px 0;
+}
+#ljyy > .container >.pull-left,#ljyy > .container >.pull-right{
+    line-height:60px;
+
+}
+
+#ljyy > .container >.pull-left >span,#ljyy > .container > p >a{
+    color:#e92322;
+}
+#ljyy > .container >.pull-left >a{
+    border-bottom: 1px dotted #e92322;
+}
+
+#ljyy > .container >.pull-left >a:hover{
+    text-decoration: none;
+}
+
+
+#ljyy > .container > p {
+    font-size:14px;
+    margin-bottom:0;
+}
+
+
+.icon-uniE905:before {
+    content: "\e905";
+}
+
+#products{
+    background-color: #f0f0f0;
+    padding: 40px 0;
+}
+
+#products .container .nav-tabs{
+
+padding-left: 20px;
+}
+#products .container .nav-tabs>li{
+
+}
+#products .container .nav-tabs>li>a{
+
+font-size: 16px;
+
+color: #333;
+}
+#products .container .nav-tabs>li>a:hover{
+
+border-color: transparent;
+
+background-color: transparent;
+
+color: #222;
+}
+#products .container .nav-tabs>li.active{
+
+}
+#products .container .nav-tabs>li.active>a{
+
+background-color: transparent;
+
+border: 0;
+
+border-bottom: 4px solid #e92322;
+}
+
+#products .container .tab-content{
+    padding:20px 0;
+}
+
+
+.panel-czbk {
+    border-color: #ddd;
+}
+.panel-czbk > .panel-heading {
+    /* color: #333; */
+    float: right;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+    height: 150px;
+    width: 120px;
+}
+.panel-czbk > .panel-body {
+    float: left;
+    height: 150px;
+    background-color: red;
+    margin-right: 120px;
+}
+.panel-czbk > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: #ddd;
+}
+.panel-czbk > .panel-heading .badge {
+    color: #f5f5f5;
+    background-color: #333;
+}
